@@ -1,22 +1,30 @@
 package comand.sy_net;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import comand.sy_net.retrofit.RetrofitFragment;
+import example.comand.commonlib.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     private static final String TAG_RETROFIT = "RETROFIT";
     private RetrofitFragment retrofitFragment;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView(Bundle saveInstanceState) {
         findViewById(R.id.btn_retrofit).setOnClickListener(this);
         retrofitFragment = new RetrofitFragment();
+    }
+
+    @Override
+    public void initToolBar() {
+
     }
 
     @Override
