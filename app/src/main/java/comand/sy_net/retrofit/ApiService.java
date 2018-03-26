@@ -8,6 +8,7 @@ import retrofit2.http.Path;
 
 /**
  * Created by huolala-sunyan on 2018/3/16.
+ * apiservice
  */
 
 public interface ApiService {
