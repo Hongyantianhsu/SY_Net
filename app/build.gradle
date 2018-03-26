@@ -31,6 +31,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
+    //导入rxJava
+    compile 'io.reactivex:rxjava:1.1.0'
     //retrofit2.0
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     //Gson转换器

@@ -38,4 +38,16 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     //导入NoHttp
     implementation 'com.yanzhenjie.nohttp:okhttp:1.1.9'
+    //导入rxJava
+    compile 'io.reactivex:rxjava:1.1.0'
+    //retrofit2.0
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    //rxjava适配器
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    //Gson转换器
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    //fastJson
+    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    //String转换器
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
 }
